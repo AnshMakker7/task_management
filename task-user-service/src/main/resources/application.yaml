@@ -1,0 +1,16 @@
+server:
+  port: 5051
+
+spring:
+  application:
+    name: USER-SERVICE
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/user_service
+    username: root
+    password: anshmkk
+    driver-class-name: com.mysql.cj.jdbc.Driver
